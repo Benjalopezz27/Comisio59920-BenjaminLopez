@@ -68,6 +68,7 @@ header {
     border-radius: 10px;
     padding: 5px 10px 5px 10px;
     margin-right: 5px;
+    color: #fff;
 }
 .main-index {
     color: #fff;
@@ -337,7 +338,7 @@ footer {
     max-width: 700px;
     height: 100px;
     display: block;
-
+    color: #fff;
 }
 .boton-crear-cuenta button  {
     text-align: center;
@@ -514,5 +515,11 @@ footer {
         font-size: 0.6rem;
         text-align: left;
         border: none;
+    }
+    .main-inferior {
+        font-size: 40%;
+    }
+    .main-inferior img {
+        display: none;
     }
 }
