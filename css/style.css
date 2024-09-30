@@ -4,6 +4,7 @@ body {
     font-family: sans-serif;
     
 }
+/* header */
 header {
     margin: none;
 }
@@ -32,6 +33,8 @@ header {
 .log-in{
     padding-right: 3px;
 }
+
+/* banner */
 .banner {
     
     margin-top: 0;
@@ -70,8 +73,10 @@ header {
     margin-right: 5px;
     color: #fff;
 }
+/* MAIN INDEX */
 .main-index {
     color: #fff;
+    
 }
 
 
@@ -99,12 +104,18 @@ header {
     text-align: center;
 } 
 .agregar-al-carrito button {
-    padding: 10px 40px;
-    border-radius: 5px;
-    background-color:#889;
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: #222222dd;
+    font-size: 17px;
+    padding: 1em 2.7em;
+    font-weight: 500;
+    background: #99a;
+    color: #000;
+    border: none;
+    border-bottom:5px solid #bbc;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    cursor: pointer;
+    letter-spacing: 2px;
     
 }
 
@@ -150,6 +161,8 @@ header {
     
     margin: 14px 10px 0 0px;
 }
+
+/* FOOTER */
 footer {
     border-top: 2px solid #fff;
     color: #fff;
@@ -195,7 +208,7 @@ footer {
     color: #fff;
     
 }
-
+/* PRODUCTOS */
 
 .ordenar-por {
     text-align: center;
@@ -280,7 +293,7 @@ footer {
     margin-left: 36px;
     font-size: 16px;
     
-    
+    /* CONTACTO */
 }
 .titulo-h2 {
     text-align: center;
@@ -340,6 +353,7 @@ footer {
     display: block;
     color: #fff;
 }
+/* CREAR CUENTA */
 .boton-crear-cuenta button  {
     text-align: center;
     padding: 18px;
@@ -382,7 +396,7 @@ footer {
     margin-top: 10px;
 }
 
-
+/* LOG-IN */
 .form-log-in input {
     padding: 10px 70px;
     background-color: #000;
