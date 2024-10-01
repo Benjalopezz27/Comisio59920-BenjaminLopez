@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background-color: #111;
     color: #fff;
     font-family: sans-serif;
     
@@ -40,7 +40,7 @@ header {
     margin-top: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     border-bottom: 1px solid #111;
 }
 .logo a {
@@ -50,13 +50,17 @@ header {
     font-size: 20px;
     letter-spacing: 2px;
     justify-content: flex-start;
-    
+    width: 5%;
     
 }
 .botones-nav li a{
     text-decoration: none;
     color: #fff;
     padding: 6px;
+}
+.botones-nav li a:hover {
+    
+    color: #c4dad28d;
 }
 .botones-nav {
     display: flex;
@@ -73,6 +77,12 @@ header {
     margin-right: 5px;
     color: #fff;
 }
+.buscador:active {
+    border: 1px solid #6069ca8d;
+}
+.carrito {
+    width: 22px;
+}
 /* MAIN INDEX */
 .main-index {
     color: #fff;
@@ -86,17 +96,31 @@ header {
 }
 .productos-importantes {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    color: #fff;
-    gap: 50px;
-    margin-bottom: 15px;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.productos-importantes article {
+    color: #E9EFEC;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    padding: 10px;   
+}
+.productos-importantes article:hover {
+    border: 1px solid #fff;
+    border-radius: 10px;
 }
 .imagen-producto img {
     width: 100%;
-    height: 80%;
+    height: 95%;
     box-sizing: border-box;
 }
+
+
+
 .content-producto {
     text-align: center;
 }
@@ -105,18 +129,22 @@ header {
 } 
 .agregar-al-carrito button {
     font-size: 17px;
-    padding: 1em 2.7em;
+    padding: 10px 30px;
     font-weight: 500;
-    background: #99a;
+    background: #c4dad28d;
     color: #000;
     border: none;
-    border-bottom:5px solid #bbc;
+    border-bottom:5px solid #c4dad274;
     position: relative;
     overflow: hidden;
     border-radius: 0.6em;
     cursor: pointer;
     letter-spacing: 2px;
     
+}
+.agregar-al-carrito button:hover {
+    border-bottom: 5px solid #fff;
+    background-color:#c4dad2c2 ;
 }
 
 .producto-card {
@@ -127,23 +155,47 @@ header {
     display: block;
     padding: 20px 80px;
     border-radius: 20px;
-    background-color:#889;
+    border-bottom: 5px solid #c4dad216;
+    background-color:#c4dad28d;
     font-size: 25px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: #222222e7;
+    margin-bottom: 10px;
+}
+.ver-todo:hover {
+    background-color:#c4dad2c2 ;
+    cursor: pointer;
 }
 .Newsletter {
     text-align: center;
     margin-bottom: 10px;
 }
+
+
+.content-producto h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+.content-producto p {
+    font-size: 20px;
+
+}
+
 .boton-newsletter {
     padding: 18px 30px;
     border-radius: 5px;
-    background-color:#889;
+    background-color:#c4dad28d;
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: #222222e1;
     margin-top: 10px;
+}
+.boton-newsletter:hover {
+    background-color:#c4dad2c2 ;
+    cursor: pointer;
 }
 .main-inferior {
     display: flex;
@@ -151,6 +203,7 @@ header {
     border-top: 1px solid #fff;
     color: #aaa;
     margin: 10px 0 10px 0;
+    font-size: 16px;
 }
 .main-div-inferior {
     display: flex;
@@ -172,9 +225,17 @@ footer {
     height: 30px;
     border-radius: 20px
 }
+.imagenes-seguinos a img:hover {
+    transform: scale(1.2);
+}
+.medios-de-pago {
+    max-width: 250px;
+    
+}
 .imagen-medios-de-pago {
-    width: 350px;
-    height: 200px;
+    width: 40px;
+    height: 30px;
+    margin: 5px;
 }
 .footer {
     display: flex;
@@ -207,6 +268,15 @@ footer {
     text-decoration: none;
     color: #fff;
     
+}
+.ubicacion {
+    display: flex;
+    gap: 10px;
+    
+}
+.ubicacion img {
+    height: 14px;
+    width: 16px;
 }
 /* PRODUCTOS */
 
@@ -324,6 +394,7 @@ footer {
     
 
 }
+
 .formulario-contacto div {
     margin-top: 10px;
 }
@@ -334,6 +405,7 @@ footer {
 .titulo-h3 {
     text-transform: uppercase ;
     letter-spacing: 2px;
+    font-size: medium;
 }
 .Contactanos-ul li {
     margin-bottom: 10px;
@@ -357,26 +429,34 @@ footer {
 .boton-crear-cuenta button  {
     text-align: center;
     padding: 18px;
-    background-color: #666;
+    background-color: #c4dad28d;
     color: #fff;
     border: 1px solid #fff;
     margin-top: 20px;
     border-radius: 7px;
     margin-bottom: 10px;
 }
+.boton-crear-cuenta button:hover {
+    background-color: #c4dad2d2;
+    
+    cursor: pointer;
+}   
 .boton-crear-cuenta {
     text-align: center;
 }
 .boton-enviar button {
     padding: 18px;
-    background-color: #666;
+    background-color: #c4dad28d;
     color: #fff;
     border: 1px solid #fff;
     margin-top: 20px;
     border-radius: 7px;
     margin-bottom: 10px;
 }
-
+.boton-enviar button:hover {
+    background-color: #c4dad2d2;
+    cursor: pointer;
+}
 .form-crear-cuenta input {
     width: 560px;
     padding: 10px ;
@@ -427,6 +507,14 @@ footer {
     .productos-importantes {
         gap: 30px;
     }
+    .main-contacto {
+        justify-content: space-around;
+        
+        
+    }  
+    .formulario-contacto input {
+    width: 400px;
+    } 
 }
 @media (max-width: 768px) {
     .main-productos .productos-importantes article {
@@ -461,8 +549,13 @@ footer {
     textarea {
         width: 90%;
     }
+    .titulo-h3 {
+        font-size: 12px;
+    }
+    .agregar-al-carrito button {
         
-    
+        font-size: 15px;
+    }
 }
 
 @media (max-width:428px) {
@@ -536,4 +629,10 @@ footer {
     .main-inferior img {
         display: none;
     }
+    .agregar-al-carrito button {
+        font-size: 10px;
+        padding: 1em 1.7em;
+    }
+    .imagen-producto img {
+        height: 150px;}
 }
