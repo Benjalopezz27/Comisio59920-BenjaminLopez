@@ -575,17 +575,17 @@ footer {
         margin: auto;    
     }
 
-    .main-productos .productos-importantes article {
-        gap: 0;
-        width: 200px;
-    }
+    
     .banner {
         flex-direction: column;
         margin-bottom: 10px;
     }
-    .main-index .productos-importantes article {
-        width: 12.5rem;
-        gap: 0;
+    .productos-importantes {
+        gap: 1px;
+        justify-content:none;
+    }
+    .productos-importantes article {
+        width: 160px;
     }
     .ver-todo {
         font-size: 16px;
@@ -597,8 +597,18 @@ footer {
 .main-inferior img {
         display: none;
     }
+    .main-inferior h3  {
+        font-size: 80%; 
+    }
+    .main-inferior p {
+        font-size: 80%;
+    }
 .form-crear-cuenta input {
     width: 90%;
+}
+.agregar-al-carrito button {
+    font-size: 10px;
+    padding: 5px;
 }
 }
 @media (max-width:428px) {
@@ -614,16 +624,8 @@ footer {
     .titulo-h4 {
         font-size: 14px
     }
-    .main-index .productos-importantes article {
-        gap: 0;
-        width: 167px;    
-    }
-    .main-productos .productos-importantes article {
-        gap: 0;
-        width: 167px;
-        
-        
-    }
+    
+    
     .main-inferior {
         font-size: 40%;
     }
