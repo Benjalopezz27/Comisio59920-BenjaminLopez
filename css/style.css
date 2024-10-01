@@ -331,9 +331,11 @@ footer {
 .main-productos {
     color: #fff;
     display: flex;
+    
 }
 .barra-lateral {
     color: #fff;
+    
 }
 .input-talle ul {
     display: flex;
@@ -504,6 +506,7 @@ footer {
     
 }
 @media (max-width: 1024px) {
+    
     .productos-importantes {
         gap: 30px;
     }
@@ -517,10 +520,8 @@ footer {
     } 
 }
 @media (max-width: 768px) {
-    .main-productos .productos-importantes article {
-        justify-content: space-evenly;
-        width: 30%;
-    }
+    
+    
     .Newsletter h3 {
         font-size: 30px;
     }
@@ -556,83 +557,97 @@ footer {
         
         font-size: 15px;
     }
-}
-
-@media (max-width:428px) {
-    .footer {
-        text-align: center;
+    .main-productos {
+        display: flex;
+        flex-direction: column;
     }
-    .header-superior {
-        font-size: 10px ;
+    .barra-lateral {
+        display: none;
         
     }
-    
+}
+
+@media (max-width: 540px) {
+    .num-mail {
+        display: none;
+    }
+    .log-in {
+        margin: auto;    
+    }
+
+    .main-productos .productos-importantes article {
+        gap: 0;
+        width: 200px;
+    }
     .banner {
         flex-direction: column;
         margin-bottom: 10px;
     }
     .main-index .productos-importantes article {
-        width: 38%;
+        width: 12.5rem;
         gap: 0;
     }
     .ver-todo {
         font-size: 16px;
     }
-    .ordenar-por {
-        text-align:left;
-    }
+    
     .ordenar-por select {
         font-size: 10px;
+}
+.main-inferior img {
+        display: none;
     }
-    .formulario-contacto input {
-        width: 80%;
-        
+.form-crear-cuenta input {
+    width: 90%;
+}
+}
+@media (max-width:428px) {
+    .footer {
+        text-align: center;
     }
-    .main-productos {
-        flex-direction: column-reverse;
-    }
-    .main-productos .productos-importantes article {
-        width: 35%;
-    }
-    .barra-lateral {
-        margin: auto;
-        justify-content: center;
-        justify-content: space-evenly;
-        
+    
+    
+    .banner {
+        flex-direction: column;
+        margin-bottom: 10px;
     }
     .titulo-h4 {
         font-size: 14px
     }
-    .lista-categorias {
-        font-size: 0.6rem;
-        border: none;
+    .main-index .productos-importantes article {
+        gap: 0;
+        width: 167px;    
+    }
+    .main-productos .productos-importantes article {
+        gap: 0;
+        width: 167px;
         
-    }
-    .precio-productos {
-        border: none;
-    }
-    .input-precio {
-        font-size: 0.6rem;
-        text-align: left;
-    }
-    .input-precio input {
-        font-size: 8px;
-    }
-    .input-talle {
-        font-size: 0.6rem;
-        text-align: left;
-        border: none;
+        
     }
     .main-inferior {
         font-size: 40%;
     }
-    .main-inferior img {
-        display: none;
+    
+    .main-inferior h3 {
+        font-size: 12px;
+        margin-top: 5px;
     }
     .agregar-al-carrito button {
         font-size: 10px;
-        padding: 1em 1.7em;
+        padding: 5px;
     }
     .imagen-producto img {
         height: 150px;}
+    .medios-de-pago {
+        margin: auto;
+    }
+    .Contactanos-ul-footer  {
+        margin: auto;
+    }
 }
+@media (max-width: 375px) {
+    .main-productos {
+        display: flex;
+        justify-content: safe;
+    }
+    }
