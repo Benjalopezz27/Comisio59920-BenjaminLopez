@@ -41,16 +41,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #222;
 }
 .logo a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
-    letter-spacing: 2px;
+    letter-spacing: -3px;
     justify-content: flex-start;
-    width: 5%;
+    
     
 }
 .botones-nav li a{
@@ -77,11 +77,13 @@ header {
     margin-right: 5px;
     color: #fff;
 }
-.buscador:active {
-    border: 1px solid #6069ca8d;
-}
+
 .carrito {
     width: 22px;
+}
+.carrito:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 /* MAIN INDEX */
 .main-index {
@@ -90,10 +92,7 @@ header {
 }
 
 
-.fieldset-productos {
-    border: none;
-    border-top: 2px solid #fff;
-}
+
 .productos-importantes {
     display: flex;
     flex-wrap: wrap;
@@ -107,16 +106,20 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #000;
-    padding: 10px;   
+    padding: 10px;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);   
 }
 .productos-importantes article:hover {
-    border: 1px solid #fff;
-    border-radius: 10px;
+    transform: scale(1.05);
+    
 }
 .imagen-producto img {
     width: 100%;
     height: 95%;
     box-sizing: border-box;
+}
+.imagen-producto img:hover {
+    opacity: 0.9;
 }
 
 
@@ -285,20 +288,27 @@ footer {
     color: #fff;
     
 }
+
 #ordenar-por {
     padding: 4px;
     text-align: center;
-    background-color: #000;
-    border: 1px solid #fff;
+    background-color: #111;
+    border: none;
+    border-bottom: 2px solid #555;
     color: #bbb;
     margin-bottom: 5px;
-    border-radius: 10px;
+    
+    
 }
 .lista-categorias li a {
-    
+    letter-spacing: 1px;
     text-decoration: none;
     color: #bbb;
     
+}
+
+.lista-categorias li a:active {
+    font-weight: bolder;
 }
 .lista-categorias li {
     margin-bottom: 17px;
@@ -324,9 +334,10 @@ footer {
     background-color: #000;
     border: 1px solid #fff;
     color: #fff;
-    width: 75px;
+    width: 180px;
     margin-bottom: 20px;
     border-radius: 10px;
+    padding: 6px ;
 }
 .main-productos {
     color: #fff;
@@ -367,11 +378,24 @@ footer {
     
     /* CONTACTO */
 }
+.paginacion ul li a {
+    background-color: #000;
+    color: #fff;
+}
+.paginacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: 20px;
+    
+}
 .titulo-h2 {
     text-align: center;
     font-size: 28px;
     text-transform: uppercase;
     font-weight: 700;
+    padding-top: 10px;
 }
 .mapa-contactos {
     width: 450px;

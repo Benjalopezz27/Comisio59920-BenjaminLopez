@@ -51,60 +51,41 @@
     <section class="ordenar-por">
         <label for="ordenar-por">Ordenar por: </label>
         <select name="Ordenar por" id="ordenar-por">
-            <option value="">A-Z</option>
-            <option value="">Z-A</option>
-            <option value="">Mas caro a mas barato</option>
-            <option value="">Mas barato a mas caro</option>
-            <option value="">Mas chico a mas grande</option>
+            <option value="">Popularidad</option>
+            <option value="">Puntuación media</option>
+            <option value="">Por los últimos</option>
+            <option value="">Ordenar por precio: bajo a alto</option>
+            <option value="">Ordenar por precio: alto a bajo</option>
         </select>
     </section>
     <div class="main-productos ">
         <section class="barra-lateral">
         <article class="categorias-productos">
             <div class="titulo-h4">
-                <h4>Categorias</h4>
+                <h4>Filtrar por categorias</h4>
             </div>
             <div>
                 <ul class="lista-categorias">
-                    <li><a href="">Equipos médicos</a></li>
-                    <li><a href="">Material quirúrgico</a></li>
-                    <li><a href="">Medicamentos</a></li>
-                    <li><a href="">Insumos para laboratorios</a></li>
+                    <li><a href="">Aspiración</a></li>
+                    <li><a href="">Bienestar</a></li>
+                    <li><a href="">Desfibriladores</a></li>
+                    <li><a href="">Insumos descartables</a></li>
+                    <li><a href="">Ortopedia</a></li>
+                    <li><a href="">Infusión</a></li>
                     <li><a id="boton-vermas" href="">Ver más</a></li>
                 </ul>
             </div>
         </article>
         <article class="precio-productos">
             <div class="titulo-h4">
-                <h4>Precio</h4>
+                <h4>Filtar por Marca</h4>
             </div>
             <div class="input-precio">
-                <label for="precio-desde">Desde</label>
-                <input type="number" id="precio-desde" placeholder="$5.999">
-                </div>
+                
                 <div class="input-precio">
-                    <label for="precio-hasta">Hasta</label>
-                <input type="number" id="precio-hasta" placeholder="$225.999">
+                    <label for="precio-hasta"></label>
+                <input type="text" id="precio-hasta" placeholder="Encontrar una marca">
                 </div>
-        </article>
-        <article class="talle-productos">
-            <div class="titulo-h4">
-                <h4>Talle</h4>
-            </div>
-            <div class="input-talle">
-            <ul>
-                <li><a href="">1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
-                <li><a href="">6</a></li>
-            </ul>
-            <div class="ver-todos-talle">
-                <a href="">Ver Todos</a>
-            </div>
-            
-            </div>
         </article>
     </section>
             <section class="productos-importantes">
@@ -175,6 +156,18 @@
                 </article>
     </section>
     </div>
+    <section class="paginacion">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+            </ul>
+          </nav>
+    </section>
+    
     <section class="main-inferior">
         <div class="main-div-inferior">
             <div>
@@ -205,6 +198,7 @@
             
         </div>
     </section>
+    
     </main>
 <footer>
     <section class="footer">
