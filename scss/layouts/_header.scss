@@ -1,0 +1,27 @@
+header {
+    margin: none;
+}
+.header-superior {
+    
+    display: flex;
+    color: #fff;
+    height: 1.80rem;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 0;
+    justify-content: space-between;
+}
+.header-superior p {
+    margin: 0;
+    padding-right: 3px;
+}
+
+.header-superior a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+.num-mail {
+    display: flex;
+}
+.log-in{
+    padding-right: 3px;}

@@ -640,6 +640,15 @@ a {
     padding: 5px;
 }
 }
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+}
+.whatsapp img {
+    width: 50px;
+}
 @media (max-width:428px) {
     .footer {
         text-align: center;
