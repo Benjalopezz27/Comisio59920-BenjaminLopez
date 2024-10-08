@@ -1,0 +1,63 @@
+footer {
+    border-top: 2px solid $color-blanco;
+    color: $color-blanco;
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        .imagenes-seguinos {
+            a{
+                img{
+                    width: 30px;
+                    width: 30px;
+                    border-radius: 20px;
+                }
+                img:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .medios-de-pago {
+            max-width: 250px;
+            img {
+                width: 40px;
+                height: 30px;
+                margin: 5px;
+            }
+        }
+        .nav-footer {
+            list-style: none;
+            li {
+                margin-bottom: 12px;
+                a {
+                    text-decoration: none;
+                    color: $color-blanco;
+                }
+            }
+        }
+        .Contactanos-ul-footer {
+            
+            li {
+                list-style: none;
+                margin-bottom: 12px;
+                a {
+                    text-decoration: none;
+                    color: $color-blanco;
+                }
+            }
+        }
+        .ubicacion {
+            display: flex;
+            gap: 10px;
+            img {
+                height: 14px;
+                width: 16px;
+            }
+            li{
+                a{
+                    color: #ccc;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

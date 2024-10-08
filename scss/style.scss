@@ -1,7 +1,11 @@
- header ul li a {
-     text-decoration: none;
-     color: #fff;
-     font-size: 18px;
-     font-weight: 600;
-     padding: 0 15px;
- }
+@import "./utilities/variables";
+@import "./base/reset";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/main-inferior";
+@import "./layouts/main-index";
+@import "./layouts/main-products";
+@import "./layouts/main-contactos";
+@import "./layouts/main-crear-cuenta";
+@import "./layouts/main-log-in";
+@import "./components/cards";

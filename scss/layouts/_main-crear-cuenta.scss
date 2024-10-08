@@ -1,0 +1,57 @@
+.form-crear-cuenta {
+    text-align: center;
+    input {
+        width: 560px;
+    padding: 10px 70px ;
+    background-color: #000;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    display: block;
+    color: #fff;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 5px;
+    }
+    label {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        color: #fff;
+    }
+
+}
+.boton-crear-cuenta {
+    text-align: center;
+    button {
+        text-align: center;
+        padding: 18px;
+        background-color: $color-principal;
+        color: #fff;
+        border: 1px solid #fff;
+        margin-top: 20px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+        
+    }
+    button:hover {
+        background-color:#c4dad2d2 ;
+        cursor: pointer;
+    }
+}
+.boton-enviar  {
+    button {
+        text-align: center;
+        padding: 18px;
+        background-color: $color-principal;
+        color: #fff;
+        border: 1px solid #fff;
+        margin-top: 20px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+    }
+    button:hover {
+        cursor: pointer;
+        background-color:#c4dad2d2 ;
+    }
+}

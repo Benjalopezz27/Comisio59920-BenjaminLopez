@@ -1,0 +1,37 @@
+.main-index {
+    color: $color-blanco;
+    
+.ver-todo {
+    margin: 0 auto;
+    display: block;
+    padding: 20px 80px;
+    border-radius: 20px;
+    border-bottom: 5px solid #c4dad216;
+    background-color:$color-principal;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #222222e7;
+    margin-bottom: 10px;
+}
+.ver-todo:hover {
+    background-color: $color-principal;
+    cursor: pointer;
+}
+.Newsletter {
+    text-align: center;
+    margin-bottom: 10px;
+    .boton-newsletter {
+        padding: 18px 30px;
+        border-radius: 5px;
+        background-color:#c4dad28d;
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: #222222e1;
+        margin-top: 10px;
+    }
+    }
+    .boton-newsletter:hover {
+        background-color: #c4dad2c2;
+        cursor: pointer;
+    }
+}
