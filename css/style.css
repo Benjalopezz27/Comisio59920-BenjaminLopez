@@ -6,6 +6,24 @@
 body {
   background-color: #111; }
 
+.titulo-h2 {
+  text-align: center;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff; }
+
+.titulo-h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: medium;
+  color: #fff; }
+
+body {
+  font-family: sans-serif; }
+
 header {
   margin: none; }
   header .header-superior {
@@ -100,9 +118,11 @@ footer {
       footer .footer .ubicacion img {
         height: 14px;
         width: 16px; }
-      footer .footer .ubicacion li a {
-        color: #ccc;
-        text-decoration: none; }
+      footer .footer .ubicacion li {
+        list-style: none; }
+        footer .footer .ubicacion li a {
+          color: #ccc;
+          text-decoration: none; }
 
 .main-inferior {
   display: flex;
@@ -126,14 +146,14 @@ footer {
     display: block;
     padding: 20px 80px;
     border-radius: 20px;
-    border-bottom: 5px solid #c4dad216;
+    border-bottom: 5px solid #c4dad2af;
     background-color: #c4dad28d;
     font-size: 25px;
     letter-spacing: 2px;
     color: #222222e7;
     margin-bottom: 10px; }
   .main-index .ver-todo:hover {
-    background-color: #c4dad28d;
+    background-color: #c4dad2c1;
     cursor: pointer; }
   .main-index .Newsletter {
     text-align: center;
@@ -150,13 +170,10 @@ footer {
     background-color: #c4dad2c2;
     cursor: pointer; }
 
-.main-productos {
-  display: flex;
+.ordenar-por {
+  text-align: center;
   color: #fff; }
-  .main-productos .ordenar-por {
-    text-align: center;
-    color: #fff; }
-  .main-productos #ordenar-por {
+  .ordenar-por #ordenar-por {
     padding: 4px;
     text-align: center;
     background-color: #111;
@@ -164,8 +181,14 @@ footer {
     border-bottom: 2px solid #555;
     color: #bbb;
     margin-bottom: 5px; }
-  .main-productos a {
-    text-decoration: none; }
+
+a {
+  text-decoration: none; }
+
+.main-productos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px; }
   .main-productos .barra-lateral {
     color: #fff; }
     .main-productos .barra-lateral .lista-categorias {
@@ -193,14 +216,15 @@ footer {
         margin-bottom: 20px;
         border-radius: 10px;
         padding: 6px; }
-  .main-productos .paginacion ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px; }
-    .main-productos .paginacion ul li a {
-      background-color: #000;
-      color: #fff; }
+
+.paginacion ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; }
+  .paginacion ul li a {
+    background-color: #000;
+    color: #fff; }
 
 .main-contacto {
   display: flex;
@@ -245,7 +269,8 @@ footer {
     border-radius: 7px; }
   .main-contacto .formulario-contacto label {
     display: block;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    color: #fff; }
 
 .form-crear-cuenta {
   text-align: center; }
@@ -338,6 +363,8 @@ footer {
       opacity: 0.9; }
     .productos-importantes article .content-producto {
       text-align: center; }
+      .productos-importantes article .content-producto h3 {
+        text-transform: uppercase; }
     .productos-importantes article .agregar-al-carrito {
       text-align: center; }
       .productos-importantes article .agregar-al-carrito button {
@@ -358,3 +385,103 @@ footer {
         background-color: #c4dad2c2; }
   .productos-importantes article:hover {
     transform: scale(1.05); }
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; }
+  .whatsapp img {
+    width: 50px; }
+
+@media (max-width: 1024px) {
+  .productos-importantes {
+    gap: 30px; }
+  .main-contacto {
+    justify-content: space-around; }
+  .formulario-contacto input {
+    width: 400px; } }
+
+@media (max-width: 768px) {
+  .titulo-h3 {
+    font-size: 12px; }
+  .footer {
+    flex-direction: column; }
+  .main-productos {
+    display: flex;
+    flex-direction: column; }
+    .main-productos .barra-lateral {
+      display: none; }
+  .Newletter h3 {
+    font-size: 30px; }
+  .Newletter input {
+    width: 90%;
+    padding: 10px 0 10px 0;
+    margin-bottom: 5px; }
+  .agregar-al-carrito button {
+    font-size: 15px; }
+  .main-contacto {
+    flex-direction: column; }
+    .main-contacto .mapa-contactos {
+      width: 90%;
+      height: 300px;
+      margin: auto;
+      display: block; }
+    .main-contacto .formulario-contacto input {
+      width: 90%; } }
+
+@media (max-width: 540px) {
+  .log-in {
+    margin: auto; }
+  .num-mail p {
+    display: none; }
+  .num-mail a {
+    display: none; }
+  .banner {
+    flex-direction: column;
+    margin-bottom: 10px; }
+    .banner div {
+      margin-bottom: 4px; }
+  .productos-importantes {
+    gap: 1px;
+    justify-content: none; }
+    .productos-importantes article {
+      width: 160px; }
+  .ver-todo {
+    font-size: 16px; }
+  .ordenar-por select {
+    font-size: 10px; }
+  .main-inferior img {
+    display: none; }
+  .main-inferior h3 {
+    font-size: 80%; }
+  .main-inferior p {
+    font-size: 80%; }
+  .form-crear-cuenta input {
+    width: 90%; }
+  .agregar-al-carrito button {
+    text-align: center;
+    width: 90%;
+    font-size: 8px; } }
+
+@media (max-width: 428px) {
+  .footer {
+    text-align: center; }
+  .banner {
+    flex-direction: column;
+    margin-bottom: 10px; }
+  .titulo-h4 {
+    font-size: 14px; }
+  .main-inferior {
+    font-size: 40%; }
+  .main-inferior h3 {
+    font-size: 12px;
+    margin-top: 5px; }
+  .agregar-al-carrito button {
+    font-size: 10px;
+    padding: 5px; }
+  .imagen-producto img {
+    height: 150px; }
+  .medios-de-pago {
+    margin: auto; }
+  .Contactanos-ul-footer {
+    margin: auto; } }

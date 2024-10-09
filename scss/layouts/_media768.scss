@@ -1,0 +1,48 @@
+
+@media (max-width: 768px) {
+    
+    .titulo-h3 {
+        font-size: 12px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .main-productos {
+        display: flex;
+        flex-direction: column;
+        .barra-lateral {
+            display: none;
+        }
+    }
+    .Newletter {
+        h3 {
+            font-size: 30px;
+        }
+         
+        input {
+                width: 90%;
+                padding: 10px 0 10px 0 ;
+                margin-bottom: 5px;
+            }
+        
+    }
+    .agregar-al-carrito {
+        button {
+            font-size: 15px;
+        }
+    }
+    .main-contacto {
+        flex-direction: column;
+        .mapa-contactos {
+            width: 90%;
+            height: 300px;
+            margin: auto;
+            display: block;
+    }
+        .formulario-contacto {
+            input {
+                width: 90%;
+            }
+        }
+    }
+}

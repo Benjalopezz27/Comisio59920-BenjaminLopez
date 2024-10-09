@@ -1,11 +1,21 @@
 @import "./utilities/variables";
 @import "./base/reset";
+@import "./base/titulos";
+@import "./base/tipografias";
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./layouts/main-inferior";
 @import "./layouts/main-index";
-@import "./layouts/main-products";
+@import "./layouts/main-productos";
 @import "./layouts/main-contactos";
 @import "./layouts/main-crear-cuenta";
 @import "./layouts/main-log-in";
 @import "./components/cards";
+@import "./components/whatsapp";
+
+
+
+@import "./layouts/media1024";
+@import "./layouts/media768";
+@import "./layouts/media540";
+@import "./layouts/media428";
