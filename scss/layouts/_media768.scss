@@ -4,6 +4,12 @@
     .titulo-h3 {
         font-size: 12px;
     }
+    .productos-importantes {
+        gap: 3px;
+        article {
+            width: 200px;
+        }
+    }
     .footer {
         flex-direction: column;
     }
@@ -28,7 +34,7 @@
     }
     .agregar-al-carrito {
         button {
-            font-size: 15px;
+            font-size: 8px;
         }
     }
     .main-contacto {

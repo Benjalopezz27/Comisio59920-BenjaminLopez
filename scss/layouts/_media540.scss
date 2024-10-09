@@ -20,12 +20,17 @@
         }
     }
     .productos-importantes {
-        gap: 1px;
-        justify-content:none;
-        article {width: 160px;}
+        gap: 0;
+        justify-content: space-evenly;
+        article {
+            width: 160px;
+        }
     }
-    .ver-todo {
-        font-size: 16px;
+    .ver-todos {
+        a {
+            font-size: 11px;
+            
+        }
     }
     .ordenar-por  {
         select {
@@ -44,10 +49,13 @@
         width: 90%;
     }
     .agregar-al-carrito{
+        
         button {
+            font-size: 6px;
+            width: 100%;
+            height: 35px;
             text-align: center;
-            width: 90%;
-            font-size: 8px;
+            padding: 2px 0;
             
         }
     }

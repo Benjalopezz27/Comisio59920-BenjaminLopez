@@ -21,9 +21,17 @@
         font-size: 12px;
         margin-top: 5px;
     }
-    .agregar-al-carrito button {
-        font-size: 10px;
-        padding: 5px;
+    .agregar-al-carrito {
+        button {
+            font-size: 6px;
+            padding: 0;
+    }  
+    } 
+    .ver-todo {
+        font-size:smaller;
+        height: 60px;
+        padding:0;
+        text-align: left;
     }
     .imagen-producto img {
         height: 150px;}
