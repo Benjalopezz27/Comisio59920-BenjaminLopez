@@ -35,10 +35,12 @@
                         color: #bbb;
                         
                     }
-                    a:active {
+                }
+                    li:hover {
+                        cursor:pointer;
                         font-weight: bolder;
                     }
-                }
+                
             }
             .precio-productos {
                 margin-bottom: 5px;

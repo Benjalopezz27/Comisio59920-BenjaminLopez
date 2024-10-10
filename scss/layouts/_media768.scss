@@ -4,6 +4,9 @@
     .titulo-h3 {
         font-size: 12px;
     }
+    .main-inferior {
+        padding-top: 10px;
+    }
     .productos-importantes {
         gap: 3px;
         article {
@@ -11,6 +14,9 @@
         }
     }
     .footer {
+        article {
+            margin-bottom: 10px;
+        }
         flex-direction: column;
     }
     .main-productos {

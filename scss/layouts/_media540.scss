@@ -1,4 +1,7 @@
 @media(max-width: 540px) {
+    .main-index {
+        width: 100%;
+    }
     
     .log-in {
         margin: auto;
@@ -20,10 +23,12 @@
         }
     }
     .productos-importantes {
+        width: 100%;
         gap: 0;
         justify-content: space-evenly;
         article {
-            width: 160px;
+            width: 45%;
+            margin-bottom: 15px;
         }
     }
     .ver-todos {
@@ -38,6 +43,7 @@
         }
     }
     .main-inferior  {
+        padding-top:10px ;
         img {display: none;
         }
         h3 {font-size: 80%;
@@ -49,15 +55,14 @@
         width: 90%;
     }
     .agregar-al-carrito{
-        
-        button {
-            font-size: 6px;
-            width: 100%;
-            height: 35px;
-            text-align: center;
-            padding: 2px 0;
-            
+            button {
+            max-width: none;
+            width: auto;
+            height: 60px;
         }
+        
+            
+        
     }
     
 }
