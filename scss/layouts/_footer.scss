@@ -1,8 +1,12 @@
 footer {
-    padding-top:10px ;
-    border-top: 2px solid $color-blanco;
+    
+    border-top: 2px solid transparent;
+    box-shadow: 10px 10px 8px 8px #ddddddc7;
     color: $color-blanco;
     .footer {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        
         display: flex;
         justify-content: space-evenly;
         .imagenes-seguinos {
@@ -60,6 +64,33 @@ footer {
                     text-decoration: none;
                 }
             }
+        }
+    }
+    .copyright {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        border-top: 1px solid #ccc;
+        article {
+            div {
+                font-size: smaller;
+                p {
+                    font-size: 18px;
+                    padding: 0;
+                }
+                span {
+                    padding-top: 0;
+                    letter-spacing: -1;
+                    font-size: 14px;
+                }
+            }
+            
+            a {
+                color: #ccc;
+            }
+
+
         }
     }
 }

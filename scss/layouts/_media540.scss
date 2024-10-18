@@ -64,5 +64,10 @@
             
         
     }
-    
+    footer {
+        .copyright {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
 }
