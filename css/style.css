@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #111; }
+  background-color: #000000f6; }
 
 .titulo-h2 {
   text-align: center;
@@ -417,10 +417,10 @@ a {
         font-size: 14px;
         padding: 10px 30px;
         font-weight: 500;
-        background: #c4dad28d;
+        background: linear-gradient(#c4dad2be, #c4dad28d);
         color: #000;
         border: none;
-        border-bottom: 5px solid #c4dad274;
+        border-bottom: 5px solid #94b1a674;
         position: relative;
         overflow: hidden;
         border-radius: 0.6em;
