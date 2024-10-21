@@ -7,7 +7,7 @@
     padding: 20px 80px;
     border-radius: 20px;
     border-bottom: 5px solid #c4dad2af;
-    background-color:$color-principal;
+    background: linear-gradient(#c4dad2be, #c4dad28d);
     font-size: 1.56em;
     letter-spacing: 2px;
     color: #222222e7;
@@ -24,8 +24,9 @@
     margin-bottom: 20px;
     .boton-newsletter {
         padding: 18px 30px;
+        border-bottom: 5px solid #c4dad2af;
         border-radius: 5px;
-        background-color:#c4dad28d;
+        background: linear-gradient(#c4dad2be, #c4dad28d);
         font-size: 14px;
         letter-spacing: 2px;
         color: #222222e1;

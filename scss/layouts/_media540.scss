@@ -21,6 +21,18 @@
         div {
             margin-bottom: 4px;
         }
+        i {
+            &:hover > .carrito-div {
+                li {
+                    font-size: 12px;
+                }
+                button {
+                    width: 60%;
+                    height: 10%;
+                    font-size: 10px;
+                }
+            }
+        }
     }
     .productos-importantes {
         width: 100%;
@@ -69,5 +81,10 @@
             flex-direction: column;
             text-align: center;
         }
+  } 
+  .whatsapp {
+    img {
+        width: 30px;
     }
+}
 }

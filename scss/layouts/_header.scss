@@ -29,6 +29,7 @@ header {
     justify-content: space-around;
     border-bottom: 1px solid #222;
     .logo {
+        width: 20%;
         a {
             font-family: 'Orbitron', sans-serif;
             color: #ffffff;
@@ -66,13 +67,76 @@ header {
         margin-right: 5px;
         color: $color-blanco;
     }
-    .carrito {
-        width: 30px;
-        &:hover {
-            cursor: pointer;
-            width: 35px;
-            transition: width 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    i {
+        color: $color-blanco;
+        font-size: 30px;
+        cursor: pointer;
+    
+        &:hover > .carrito-div {
+            width: 40%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 2;
+            background-color: #000;
+            border-left: #fff solid 1px;
+            transition: right 0.5s ease; 
+            right: 0;
+            
+            button {
+                display: block;
+                width: 90%;
+                padding: 1rem;
+                margin: 10px auto;
+                font-size: 1rem;
+                font-weight: 500;
+                background: linear-gradient(#c4dad2be, #c4dad28d);
+                color: #000;
+                border: none;
+                border-bottom: 5px solid #94b1a674;
+                position: relative;
+                overflow: hidden;
+                border-radius: 0.6em;
+                cursor: pointer;
+                letter-spacing: 2px;
+                &:hover {
+                    border-bottom: 5px solid #fff;
+                background-color:#c4dad2c2 ;
+                }
+            }
+        }
+    
+        &:hover .carrito-ul {
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            color: #fff;
+            margin: 20px 0;
+            border-bottom: #666 solid 1px;
+            
+            li {
+                padding-bottom: 10px;
+                list-style: none;
+            }
         }
     }
+    
+    .carrito-div {
+        width: 0; 
+        height: 100%; 
+        position: absolute; 
+        right: -35%; 
+        transition: right 0.5s ease; 
+        
+        button {
+            display: none;
+        }
+        
+        .carrito-ul {
+            display: none;
+        }
+    }
+    
 }
 }

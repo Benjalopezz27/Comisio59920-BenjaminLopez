@@ -57,14 +57,16 @@ header {
     align-items: center;
     justify-content: space-around;
     border-bottom: 1px solid #222; }
-    header .banner .logo a {
-      font-family: 'Orbitron', sans-serif;
-      color: #ffffff;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 20px;
-      letter-spacing: -1px;
-      justify-content: flex-start; }
+    header .banner .logo {
+      width: 20%; }
+      header .banner .logo a {
+        font-family: 'Orbitron', sans-serif;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: -1px;
+        justify-content: flex-start; }
     header .banner .botones-nav {
       display: flex;
       gap: 10px;
@@ -84,12 +86,60 @@ header {
       padding: 5px 10px 5px 10px;
       margin-right: 5px;
       color: #fff; }
-    header .banner .carrito {
-      width: 30px; }
-      header .banner .carrito:hover {
-        cursor: pointer;
-        width: 35px;
-        transition: width 2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    header .banner i {
+      color: #fff;
+      font-size: 30px;
+      cursor: pointer; }
+      header .banner i:hover > .carrito-div {
+        width: 40%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        background-color: #000;
+        border-left: #fff solid 1px;
+        transition: right 0.5s ease;
+        right: 0; }
+        header .banner i:hover > .carrito-div button {
+          display: block;
+          width: 90%;
+          padding: 1rem;
+          margin: 10px auto;
+          font-size: 1rem;
+          font-weight: 500;
+          background: linear-gradient(#c4dad2be, #c4dad28d);
+          color: #000;
+          border: none;
+          border-bottom: 5px solid #94b1a674;
+          position: relative;
+          overflow: hidden;
+          border-radius: 0.6em;
+          cursor: pointer;
+          letter-spacing: 2px; }
+          header .banner i:hover > .carrito-div button:hover {
+            border-bottom: 5px solid #fff;
+            background-color: #c4dad2c2; }
+      header .banner i:hover .carrito-ul {
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        color: #fff;
+        margin: 20px 0;
+        border-bottom: #666 solid 1px; }
+        header .banner i:hover .carrito-ul li {
+          padding-bottom: 10px;
+          list-style: none; }
+    header .banner .carrito-div {
+      width: 0;
+      height: 100%;
+      position: absolute;
+      right: -35%;
+      transition: right 0.5s ease; }
+      header .banner .carrito-div button {
+        display: none; }
+      header .banner .carrito-div .carrito-ul {
+        display: none; }
 
 footer {
   border-top: 2px solid transparent;
@@ -181,7 +231,7 @@ footer {
     padding: 20px 80px;
     border-radius: 20px;
     border-bottom: 5px solid #c4dad2af;
-    background-color: #c4dad28d;
+    background: linear-gradient(#c4dad2be, #c4dad28d);
     font-size: 1.56em;
     letter-spacing: 2px;
     color: #222222e7;
@@ -195,8 +245,9 @@ footer {
     margin-bottom: 20px; }
     .main-index .Newsletter .boton-newsletter {
       padding: 18px 30px;
+      border-bottom: 5px solid #c4dad2af;
       border-radius: 5px;
-      background-color: #c4dad28d;
+      background: linear-gradient(#c4dad2be, #c4dad28d);
       font-size: 14px;
       letter-spacing: 2px;
       color: #222222e1;
@@ -456,6 +507,10 @@ a {
     width: 400px; } }
 
 @media (max-width: 768px) {
+  i {
+    font-size: 20px; }
+    i:hover > .carrito-div {
+      width: 80%; }
   .titulo-h3 {
     font-size: 12px; }
   .main-inferior {
@@ -509,6 +564,12 @@ a {
     margin-bottom: 10px; }
     .banner div {
       margin-bottom: 4px; }
+    .banner i:hover > .carrito-div li {
+      font-size: 12px; }
+    .banner i:hover > .carrito-div button {
+      width: 60%;
+      height: 10%;
+      font-size: 10px; }
   .productos-importantes {
     width: 100%;
     gap: 0;
@@ -536,7 +597,9 @@ a {
     height: 60px; }
   footer .copyright {
     flex-direction: column;
-    text-align: center; } }
+    text-align: center; }
+  .whatsapp img {
+    width: 30px; } }
 
 @media (max-width: 428px) {
   .footer {
