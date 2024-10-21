@@ -4,5 +4,8 @@
     right: 20px;
     img {
         width: 50px;
+    &:hover {
+        opacity: 0.9;
+    }
     }
 }

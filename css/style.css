@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -57,11 +58,12 @@ header {
     justify-content: space-around;
     border-bottom: 1px solid #222; }
     header .banner .logo a {
+      font-family: 'Orbitron', sans-serif;
       color: #ffffff;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 20px;
-      letter-spacing: -3px;
+      letter-spacing: -1px;
       justify-content: flex-start; }
     header .banner .botones-nav {
       display: flex;
@@ -84,9 +86,10 @@ header {
       color: #fff; }
     header .banner .carrito {
       width: 30px; }
-    header .banner .carrito:hover {
-      cursor: pointer;
-      transform: scale(1.1); }
+      header .banner .carrito:hover {
+        cursor: pointer;
+        width: 35px;
+        transition: width 2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
 footer {
   border-top: 2px solid transparent;
@@ -400,15 +403,17 @@ a {
       text-align: center; }
       .productos-importantes article .content-producto h3 {
         font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 1px;
+        font-weight: 900;
+        letter-spacing: 2px;
         text-transform: uppercase; }
       .productos-importantes article .content-producto .precio {
         font-size: 24px; }
       .productos-importantes article .content-producto p {
-        color: #bbb;
+        color: #aaa;
         font-size: 14px;
-        font-weight: 200; }
+        font-weight: 200;
+        font-family: 'Times New Roman', Times, serif;
+        text-transform: uppercase; }
     .productos-importantes article .content-producto:hover {
       color: #c4dad28d; }
     .productos-importantes article .agregar-al-carrito {
@@ -439,6 +444,8 @@ a {
   right: 20px; }
   .whatsapp img {
     width: 50px; }
+    .whatsapp img:hover {
+      opacity: 0.9; }
 
 @media (max-width: 1024px) {
   .productos-importantes {

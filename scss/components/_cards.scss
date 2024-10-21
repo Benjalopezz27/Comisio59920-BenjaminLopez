@@ -27,17 +27,19 @@
         text-align: center;
         h3 {
             font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 1px;
+            font-weight: 900;
+            letter-spacing: 2px;
             text-transform: uppercase;
         }
         .precio {
             font-size: 24px;
         }
         p {
-            color: #bbb;
+            color: #aaa;
             font-size: 14px;
             font-weight: 200;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
         }
     }
     .content-producto:hover {

@@ -30,11 +30,12 @@ header {
     border-bottom: 1px solid #222;
     .logo {
         a {
+            font-family: 'Orbitron', sans-serif;
             color: #ffffff;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 20px;
-            letter-spacing: -3px;
+            letter-spacing: -1px;
             justify-content: flex-start;
         }
     }
@@ -52,6 +53,8 @@ header {
             a:hover {
                 color: $color-principal;
             }
+            
+            
         }
     }
     .buscador {
@@ -65,10 +68,11 @@ header {
     }
     .carrito {
         width: 30px;
-    }
-    .carrito:hover {
-        cursor: pointer;
-        transform: scale(1.1);
+        &:hover {
+            cursor: pointer;
+            width: 35px;
+            transition: width 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+        }
     }
 }
 }
