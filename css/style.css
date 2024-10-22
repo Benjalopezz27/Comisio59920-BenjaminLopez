@@ -91,7 +91,7 @@ header {
       font-size: 30px;
       cursor: pointer; }
       header .banner i:hover > .carrito-div {
-        width: 40%;
+        width: 50%;
         height: 100%;
         position: absolute;
         right: 0;
@@ -99,44 +99,31 @@ header {
         z-index: 2;
         background-color: #000;
         border-left: #fff solid 1px;
-        transition: right 0.5s ease;
-        right: 0; }
-        header .banner i:hover > .carrito-div button {
-          display: block;
-          width: 90%;
-          padding: 1rem;
-          margin: 10px auto;
-          font-size: 1rem;
-          font-weight: 500;
-          background: linear-gradient(#c4dad2be, #c4dad28d);
-          color: #000;
-          border: none;
-          border-bottom: 5px solid #94b1a674;
-          position: relative;
-          overflow: hidden;
-          border-radius: 0.6em;
-          cursor: pointer;
-          letter-spacing: 2px; }
-          header .banner i:hover > .carrito-div button:hover {
-            border-bottom: 5px solid #fff;
-            background-color: #c4dad2c2; }
-      header .banner i:hover .carrito-ul {
-        display: flex;
-        justify-content: space-around;
-        font-size: 20px;
-        color: #fff;
-        margin: 20px 0;
-        border-bottom: #666 solid 1px; }
-        header .banner i:hover .carrito-ul li {
-          padding-bottom: 10px;
-          list-style: none; }
+        transition: right 0.5s ease; }
+        header .banner i:hover > .carrito-div .carrito-ul {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          font-size: 16px;
+          color: #fff;
+          margin: 20px 0;
+          border-bottom: #666 solid 1px; }
+          header .banner i:hover > .carrito-div .carrito-ul li {
+            padding-bottom: 10px;
+            list-style: none; }
+        header .banner i:hover > .carrito-div span {
+          font-size: 10px;
+          font-family: 'Times New Roman', Times, serif;
+          color: #bbb;
+          margin: 10px;
+          letter-spacing: 1px; }
     header .banner .carrito-div {
       width: 0;
       height: 100%;
       position: absolute;
       right: -35%;
       transition: right 0.5s ease; }
-      header .banner .carrito-div button {
+      header .banner .carrito-div .vaciar-carrito {
         display: none; }
       header .banner .carrito-div .carrito-ul {
         display: none; }
@@ -566,10 +553,6 @@ a {
       margin-bottom: 4px; }
     .banner i:hover > .carrito-div li {
       font-size: 12px; }
-    .banner i:hover > .carrito-div button {
-      width: 60%;
-      height: 10%;
-      font-size: 10px; }
   .productos-importantes {
     width: 100%;
     gap: 0;
@@ -607,24 +590,32 @@ a {
   .banner {
     flex-direction: column;
     margin-bottom: 10px; }
-  .titulo-h4 {
-    font-size: 14px; }
-  .main-inferior {
-    font-size: 40%; }
-  .main-inferior h3 {
-    font-size: 12px;
-    margin-top: 5px; }
-  .agregar-al-carrito button {
-    font-size: 6px;
-    padding: 0; }
-  .ver-todo {
-    font-size: smaller;
-    height: 60px;
-    padding: 0;
-    text-align: left; }
-  .imagen-producto img {
-    height: 150px; }
-  .medios-de-pago {
-    margin: auto; }
-  .Contactanos-ul-footer {
-    margin: auto; } }
+    .banner .logo {
+      width: 30%; }
+    .banner i .carrito-div .carrito-ul {
+      font-size: 0.7rem;
+      flex-direction: column;
+      gap: 20px; }
+    .banner .titulo-h4 {
+      font-size: 14px; }
+    .banner .main-inferior {
+      font-size: 40%; }
+      .banner .main-inferior h3 {
+        font-size: 12px;
+        margin-top: 5px; }
+      .banner .main-inferior .main-div-inferior p {
+        display: none; }
+    .banner .agregar-al-carrito button {
+      font-size: 6px;
+      padding: 0; }
+    .banner .ver-todo {
+      font-size: smaller;
+      height: 60px;
+      padding: 0;
+      text-align: left; }
+    .banner .imagen-producto img {
+      height: 150px; }
+    .banner .medios-de-pago {
+      margin: auto; }
+    .banner .Contactanos-ul-footer {
+      margin: auto; } }

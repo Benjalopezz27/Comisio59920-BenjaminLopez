@@ -7,6 +7,21 @@
     .banner {
         flex-direction: column;
         margin-bottom: 10px;
+        .logo {
+            width: 30%;
+        }
+        
+        i {
+
+            .carrito-div {
+                .carrito-ul {
+            font-size: 0.7rem;
+            flex-direction: column;
+            gap: 20px;
+            
+            }
+            
+        }
     }
     .titulo-h4 {
         font-size: 14px
@@ -15,12 +30,18 @@
     
     .main-inferior {
         font-size: 40%;
+        h3 {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .main-div-inferior {
+            p {
+                display: none;
+            }
+        }
     }
     
-    .main-inferior h3 {
-        font-size: 12px;
-        margin-top: 5px;
-    }
+    
     .agregar-al-carrito {
         button {
             font-size: 6px;
@@ -41,4 +62,5 @@
     .Contactanos-ul-footer {
         margin: auto;
     }
+}
 }
