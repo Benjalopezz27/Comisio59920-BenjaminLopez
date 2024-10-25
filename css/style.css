@@ -54,10 +54,8 @@ header {
   header .banner {
     margin-top: 0;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: nowrap;
     border-bottom: 1px solid #222; }
     header .banner .logo {
       width: 20%; }
@@ -103,11 +101,9 @@ header {
         border-left: #fff solid 1px;
         transition: right 0.5s ease; }
         header .banner i:hover > .carrito-div .carrito-ul {
-          display: flex;
-          flex-direction: row;
+          display: block;
+          flex-direction: column;
           justify-content: space-around;
-          align-items: center;
-          gap: nowrap;
           font-size: 16px;
           color: white;
           margin: 20px 0;
@@ -140,10 +136,7 @@ footer {
     padding-top: 18px;
     padding-bottom: 18px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: none;
-    gap: nowrap; }
+    justify-content: space-evenly; }
     footer .footer .imagenes-seguinos a img {
       width: 30px;
       width: 30px;

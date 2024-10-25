@@ -24,7 +24,10 @@ header {
 }
 .banner {
     margin-top: 0;
-    @include flex(row, space-around, center, nowrap);
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
     border-bottom: 1px solid #222;
     .logo {
         width: 20%;
@@ -81,7 +84,9 @@ header {
             border-left: #fff solid 1px;
             transition: right 0.5s ease; 
             .carrito-ul {
-            @include flex(row, space-around, center, nowrap);
+            display: block;
+            flex-direction: column;
+            justify-content: space-around;
             font-size: 16px;            
             color: map-get($map: $colores-sitio, $key: 'blanco' );
             margin: 20px 0;
