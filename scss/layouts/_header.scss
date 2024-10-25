@@ -24,9 +24,7 @@ header {
 }
 .banner {
     margin-top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    @include flex(row, space-around, center, nowrap);
     border-bottom: 1px solid #222;
     .logo {
         width: 20%;
@@ -52,7 +50,7 @@ header {
                 padding: 6px;
             }
             a:hover {
-                color: $color-principal;
+                color: map-get($map: $colores-sitio, $key: 'principal' );
             }
             
             
@@ -60,15 +58,15 @@ header {
     }
     .buscador {
         justify-content: flex-end;
-        background-color: #000;
+        background-color: map-get($map: $colores-sitio, $key: 'negro' );
         border: 1px solid #fff;
         border-radius: 10px;
         padding: 5px 10px 5px 10px;
         margin-right: 5px;
-        color: $color-blanco;
+        color: map-get($map: $colores-sitio, $key: 'blanco' );
     }
     i {
-        color: $color-blanco;
+        color: map-get($map: $colores-sitio, $key: 'blanco' );
         font-size: 30px;
         cursor: pointer;
     
@@ -83,11 +81,9 @@ header {
             border-left: #fff solid 1px;
             transition: right 0.5s ease; 
             .carrito-ul {
-            display: flex;
-            justify-content: space-around;
-            align-items: center; 
+            @include flex(row, space-around, center, nowrap);
             font-size: 16px;            
-            color: #fff;
+            color: map-get($map: $colores-sitio, $key: 'blanco' );
             margin: 20px 0;
             border-bottom: #666 solid 1px;
     

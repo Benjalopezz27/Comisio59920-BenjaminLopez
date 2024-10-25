@@ -1,16 +1,13 @@
 .productos-importantes {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
+    @include flex(row, space-evenly, center, 20px);
     margin-bottom: 20px;
     article {
         margin: 10px;
         width: 250px;
         color: #E9EFEC;
-        display: flex;
-        flex-direction: column;
-        background-color: #000;
+        @include flex(column, center, center, nowrap);
+        background-color: map-get($map: $colores-sitio, $key: 'negro' );
         padding: 10px;
         transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
     img {
@@ -35,7 +32,7 @@
             font-size: 24px;
         }
         p {
-            color: #aaa;
+            color: map-get($map: $colores-sitio, $key: 'gris' );
             font-size: 14px;
             font-weight: 200;
             font-family: 'Times New Roman', Times, serif;
@@ -43,7 +40,7 @@
         }
     }
     .content-producto:hover {
-        color: #c4dad28d;
+        color: map-get($map: $colores-sitio, $key: 'principal' );
     }
     
     .agregar-al-carrito {
@@ -53,7 +50,7 @@
             padding: 10px 30px;
             font-weight: 500;
             background: linear-gradient(#c4dad2be, #c4dad28d);
-            color: #000;
+            color: map-get($map: $colores-sitio, $key: 'negro' );
             border: none;
             border-bottom:5px solid #94b1a674;
             position: relative;

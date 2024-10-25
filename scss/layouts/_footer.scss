@@ -2,13 +2,12 @@ footer {
     
     border-top: 2px solid transparent;
     box-shadow: 10px 10px 8px 8px #ddddddc7;
-    color: $color-blanco;
+    color: map-get($map: $colores-sitio, $key: 'blanco' );
     .footer {
         padding-top: 18px;
         padding-bottom: 18px;
+        @include flex(row, space-evenly,none, nowrap);
         
-        display: flex;
-        justify-content: space-evenly;
         .imagenes-seguinos {
             a{
                 img{
@@ -35,7 +34,7 @@ footer {
                 margin-bottom: 12px;
                 a {
                     text-decoration: none;
-                    color: $color-blanco;
+                    color: map-get($map: $colores-sitio, $key: 'blanco' );
                 }
             }
         }
@@ -46,7 +45,7 @@ footer {
                 margin-bottom: 12px;
                 a {
                     text-decoration: none;
-                    color: $color-blanco;
+                    color: map-get($map: $colores-sitio, $key: 'blanco' );
                 }
             }
         }

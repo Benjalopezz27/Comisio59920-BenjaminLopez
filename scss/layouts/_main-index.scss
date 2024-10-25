@@ -1,5 +1,5 @@
 .main-index {
-    color: $color-blanco;
+    color: map-get($map: $colores-sitio, $key: 'blanco' );
     
 .ver-todo {
     margin: 0 auto;

@@ -1,6 +1,5 @@
 .main-inferior {
-    display: flex;
-    justify-content: space-evenly;
+    @include flex(row, space-evenly, center, nowrap);
     border-top: 1px solid #fff;
     color: #aaa;
     padding-top: 20px;
