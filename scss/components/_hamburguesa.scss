@@ -1,0 +1,35 @@
+.menu-hamburguesa {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+} 
+
+.hamburguesa {
+    cursor: pointer;
+    color: #ddd;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.barra-lateral {
+    max-height: 0; 
+    opacity: 0; 
+    overflow: hidden; 
+    background-color: #000;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease; 
+}
+
+.menu-toggle:checked + .hamburguesa + .barra-lateral {
+    max-height: 500px; 
+    opacity: 1; 
+    padding: 15px; 
+}
+
+
+
+
+

@@ -123,8 +123,6 @@ header {
       position: absolute;
       right: -35%;
       transition: right 0.5s ease; }
-      header .banner .carrito-div .vaciar-carrito {
-        display: none; }
       header .banner .carrito-div .carrito-ul {
         display: none; }
 
@@ -484,6 +482,32 @@ a {
     cursor: pointer;
     transform: scale(1.05); }
 
+.menu-hamburguesa {
+  position: relative; }
+
+.menu-toggle {
+  display: none; }
+
+.hamburguesa {
+  cursor: pointer;
+  color: #ddd;
+  font-size: 30px;
+  padding: 10px; }
+
+.barra-lateral {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  background-color: #000;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease; }
+
+.menu-toggle:checked + .hamburguesa + .barra-lateral {
+  max-height: 500px;
+  opacity: 1;
+  padding: 15px; }
+
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -521,8 +545,6 @@ a {
   .main-productos {
     display: flex;
     flex-direction: column; }
-    .main-productos .barra-lateral {
-      display: none; }
     .main-productos .copyright p {
       font-size: 80%; }
     .main-productos .copyright span {
@@ -543,7 +565,16 @@ a {
       margin: auto;
       display: block; }
     .main-contacto .formulario-contacto input {
-      width: 90%; } }
+      width: 90%; }
+  .menu-hamburguesa {
+    text-align: center;
+    width: 100%;
+    z-index: 2; }
+  .lista-categorias {
+    margin: auto; }
+  .precio-productos {
+    margin: auto;
+    padding-top: 10px; } }
 
 @media (max-width: 540px) {
   .main-index {

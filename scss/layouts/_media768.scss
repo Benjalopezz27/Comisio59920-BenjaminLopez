@@ -27,9 +27,7 @@
     .main-productos {
         display: flex;
         flex-direction: column;
-        .barra-lateral {
-            display: none;
-        }
+        
         .copyright {
             p {
                 font-size: 80%;
@@ -68,5 +66,19 @@
                 width: 90%;
             }
         }
+    }
+    .menu-hamburguesa {
+       
+        text-align: center;     
+        width: 100%;
+        z-index: 2;
+        
+    }
+    .lista-categorias  {
+        margin: auto;
+}
+    .precio-productos {
+        margin:auto;
+        padding-top: 10px;
     }
 }
