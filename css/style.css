@@ -113,6 +113,7 @@ header {
             padding-bottom: 10px;
             list-style: none; }
         header .banner i:hover > .carrito-div span {
+          display: block;
           font-size: 10px;
           font-family: 'Times New Roman', Times, serif;
           color: #bbb;
@@ -124,6 +125,8 @@ header {
       position: absolute;
       right: -35%;
       transition: right 0.5s ease; }
+      header .banner .carrito-div span {
+        display: none; }
       header .banner .carrito-div .carrito-ul {
         display: none; }
 
@@ -591,8 +594,10 @@ a {
     margin-bottom: 10px; }
     .banner div {
       margin-bottom: 4px; }
-    .banner i:hover > .carrito-div li {
-      font-size: 12px; }
+    .banner i {
+      margin: 4px 0px; }
+      .banner i:hover > .carrito-div li {
+        font-size: 12px; }
   .productos-importantes {
     width: 100%;
     gap: 0;
@@ -636,26 +641,26 @@ a {
       font-size: 0.7rem;
       flex-direction: column;
       gap: 20px; }
-    .banner .titulo-h4 {
-      font-size: 14px; }
-    .banner .main-inferior {
-      font-size: 40%; }
-      .banner .main-inferior h3 {
-        font-size: 12px;
-        margin-top: 5px; }
-      .banner .main-inferior .main-div-inferior p {
-        display: none; }
-    .banner .agregar-al-carrito button {
-      font-size: 6px;
-      padding: 0; }
-    .banner .ver-todo {
-      font-size: smaller;
-      height: 60px;
-      padding: 0;
-      text-align: left; }
-    .banner .imagen-producto img {
-      height: 150px; }
-    .banner .medios-de-pago {
-      margin: auto; }
-    .banner .Contactanos-ul-footer {
-      margin: auto; } }
+  .titulo-h4 {
+    font-size: 14px; }
+  .main-inferior {
+    font-size: 40%; }
+    .main-inferior h3 {
+      font-size: 12px;
+      margin-top: 5px; }
+    .main-inferior .main-div-inferior p {
+      display: none; }
+  .agregar-al-carrito button {
+    font-size: 6px;
+    padding: 0; }
+  .ver-todo {
+    font-size: smaller;
+    height: 60px;
+    padding: 0;
+    text-align: left; }
+  .imagen-producto img {
+    height: 150px; }
+  .medios-de-pago {
+    margin: auto; }
+  .Contactanos-ul-footer {
+    margin: auto; } }
