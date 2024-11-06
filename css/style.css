@@ -654,12 +654,14 @@ a {
     padding: 0; }
   .ver-todo {
     font-size: smaller;
-    height: 60px;
-    padding: 0;
-    text-align: left; }
+    padding: none;
+    text-align: center; }
   .imagen-producto img {
     height: 150px; }
   .medios-de-pago {
     margin: auto; }
   .Contactanos-ul-footer {
-    margin: auto; } }
+    margin: auto; }
+  .productos-importantes article {
+    width: 80%;
+    margin-bottom: 15px; } }
