@@ -92,7 +92,7 @@ header {
       cursor: pointer; }
       header .banner i:hover > .carrito-div {
         width: 50%;
-        height: 50%;
+        height: 70%;
         position: absolute;
         right: 0;
         top: 0;
@@ -102,8 +102,7 @@ header {
         border-bottom: #fff solid 1px;
         transition: right 0.5s ease; }
         header .banner i:hover > .carrito-div .carrito-ul {
-          display: block;
-          flex-direction: column;
+          display: flex;
           justify-content: space-around;
           font-size: 16px;
           color: white;
