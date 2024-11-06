@@ -445,6 +445,7 @@ a {
     .productos-importantes article img:hover {
       opacity: 0.9; }
     .productos-importantes article .content-producto {
+      margin-top: 6px;
       color: #ddd;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       text-align: center; }
