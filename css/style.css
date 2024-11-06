@@ -284,7 +284,6 @@ a {
         font-weight: bolder; }
     .main-productos .barra-lateral .precio-productos {
       margin-bottom: 5px;
-      border-bottom: 1px dashed #fff;
       width: 236px; }
       .main-productos .barra-lateral .precio-productos .input-precio input {
         background-color: #000;
