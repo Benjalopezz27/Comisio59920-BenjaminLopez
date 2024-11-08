@@ -667,7 +667,7 @@ a {
     width: 80%;
     margin-bottom: 15px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
   .Newsletter input {
     width: 100%; }
   .footer {
