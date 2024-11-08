@@ -525,9 +525,8 @@ a {
   .productos-importantes {
     gap: 30px; }
   .main-contacto {
-    justify-content: space-around; }
-  .formulario-contacto input {
-    width: 400px; } }
+    justify-content: center;
+    flex-wrap: wrap; } }
 
 @media (max-width: 768px) {
   i {
@@ -644,7 +643,8 @@ a {
   .titulo-h4 {
     font-size: 14px; }
   .main-inferior {
-    font-size: 40%; }
+    font-size: 40%;
+    gap: 10px; }
     .main-inferior h3 {
       font-size: 12px;
       margin-top: 5px; }

@@ -4,11 +4,10 @@
         gap: 30px;
     }
     .main-contacto {
-        justify-content: space-around;
+        justify-content: center;
+        flex-wrap: wrap;
         
         
     }  
-    .formulario-contacto input {
-    width: 400px;
-    } 
+    
 }
