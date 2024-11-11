@@ -18,12 +18,17 @@
     .banner {
         flex-direction: column;
         margin-bottom: 10px;
-        
+        h1 {
+            font-size: 20px;
+            width: 40%;
+            left: 0;
+            margin: 5px;
+        }
         div {
             margin-bottom: 4px;
         }
         i {
-            margin: 4px 0px;
+            margin: 8px 0px;
             &:hover > .carrito-div {
                 li {
                     font-size: 12px;

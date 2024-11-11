@@ -591,10 +591,15 @@ a {
   .banner {
     flex-direction: column;
     margin-bottom: 10px; }
+    .banner h1 {
+      font-size: 20px;
+      width: 40%;
+      left: 0;
+      margin: 5px; }
     .banner div {
       margin-bottom: 4px; }
     .banner i {
-      margin: 4px 0px; }
+      margin: 8px 0px; }
       .banner i:hover > .carrito-div li {
         font-size: 12px; }
   .productos-importantes {
@@ -634,8 +639,6 @@ a {
   .banner {
     flex-direction: column;
     margin-bottom: 10px; }
-    .banner .logo {
-      width: 30%; }
     .banner i .carrito-div .carrito-ul {
       font-size: 0.7rem;
       flex-direction: column;
